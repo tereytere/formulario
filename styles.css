@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Bonbon&family=Emilys+Candy&display=swap");
+body, header, main, footer {
+  width: 100% !important;
+  overflow-x: hidden !important;
+  font-family: "Emilys Candy";
+}
+
+.logo {
+  max-height: 32px;
+}
+
+.navcol {
+  background-color: rgb(245, 93, 253);
+  color: rgb(65, 7, 82);
+}
+
+#formulario {
+  background-image: url(https://cdn.pixabay.com/photo/2018/06/29/08/15/doodle-3505459__340.png);
+  background-repeat: repeat;
+  padding: 10% 5%;
+  color: rgb(84, 34, 1);
+}
+
+#forms {
+  background-color: rgba(255, 201, 229, 0.8);
+  padding: 2% 0%;
+}
+
+.boton {
+  --bs-btn-bg: rgb(65, 7, 82) !important;
+  --bs-btn-border-color: rgb(39, 5, 49) !important;
+  --bs-btn-hover-bg: rgb(245, 93, 253) !important;
+  --bs-btn-hover-border-color: rgb(167, 67, 172) !important;
+  --bs-btn-active-bg: rgb(65, 7, 82) !important;
+  --bs-btn-active-border-color: rgb(39, 5, 49) !important;
+  --bs-btn-disabled-bg: rgb(245, 93, 253) !important;
+  --bs-btn-disabled-border-color: rgb(167, 67, 172) !important;
+}/*# sourceMappingURL=styles.css.map */
