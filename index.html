@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -41,149 +41,170 @@
         </nav>
     </header>
     <main id="formulario">
-        <form id="forms" class="row g-3">
-            <div class="col-md-4">
-              <label for="validationServer01" class="form-label">Nombre</label>
-              <input type="text" class="form-control is-valid" id="validationServer01" required>
-              <div class="valid-feedback">
-                Aceptado
-              </div>
+      <form id="forms" class="row g-3">
+        <div id="nombre" class="col-md-4">
+          <label for="validationServer01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationServer01" required>
+          <div id="validationServer01Feedback">
+            <p id="validationServer01FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer01FeedbackTextF" class="hidden">Por favor introduce tu nombre</p>
+          </div>
+        </div>
+        <div id="apellidos" class="col-md-4">
+          <label for="validationServer02" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="validationServer02" required>
+          <div id="validationServer02Feedback">
+            <p id="validationServer02FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer02FeedbackTextF" class="hidden">Por favor introduce tus apellidos</p>
+          </div>
+        </div>
+        <div id="usuario" class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback">
+              <p id="validationServerUsernameFeedbackTextV" class="hidden">Aceptado</p>
+              <p id="validationServerUsernameFeedbackTextF" class="hidden">Por favor introduce tu nombre de usuario</p>  
             </div>
-            <div class="col-md-4">
-              <label for="validationServer02" class="form-label">Apellidos</label>
-              <input type="text" class="form-control is-valid" id="validationServer02" required>
-              <div class="valid-feedback">
-                Aceptado
-              </div>
+          </div>
+        </div>
+        <div id="edad" class="col-md-4">
+          <label for="validationServer03" class="form-label">Edad</label>
+          <input type="number" min="1" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback">
+            <p id="validationServer03FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer03FeedbackTextF" class="hidden">Debes ser mayor de edad</p>
+          </div>
+        </div>
+        <div id="correo" class="col-md-8">
+          <label for="validationServer04" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="validationServer04" required placeholder="nombre@ejemplo.com">
+          <div id="validationServer04Feedback">
+            <p id="validationServer04FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer04FeedbackTextF" class="hidden">Por favor introduce tu correo electrónico</p>
+          </div>
+        </div>
+        <div id="elfo" class="col-6 hidden">
+          <label for="validationServer10" class="form-label">Habla amigo y entra</label>
+          <input type="text" class="form-control" id="validationServer10" required>
+          <div id="validationServer10Feedback">
+            <p id="validationServer10FeedbackTextV" class="hidden">Entra amigo</p>
+            <p id="validationServer10FeedbackTextF" class="hidden">No pasarás</p>
+          </div>
+        </div>
+        <div id="dni" class="col-6 hidden">
+          <label for="validationServer11" class="form-label">DNI</label>
+          <input type="text" class="form-control" id="validationServer11" required>
+          <div id="validationServer11Feedback">
+            <p id="validationServer11FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer11FeedbackTextF" class="hidden">Por favor introduce un DNI válido</p>
+          </div>
+        </div>
+        <div id="direccion" class="col-md-3">
+          <label for="validationServer05" class="form-label">Dirección</label>
+          <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+          <div id="validationServer05Feedback">
+            <p id="validationServer05FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer05FeedbackTextF" class="hidden">Por favor introduce tu dirección</p>
+          </div>
+        </div>
+        <div id="codigo" class="col-md-3">
+          <label for="validationServer06" class="form-label">Código Postal</label>
+          <input type="number" min="1" class="form-control" id="validationServer06" aria-describedby="validationServer06Feedback" required>
+          <div id="validationServer06Feedback">
+            <p id="validationServer06FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer06FeedbackTextF" class="hidden">Por favor introduce tu código postal</p>
+          </div>
+        </div>
+        <div id="ciudad" class="col-md-3">
+          <label for="validationServer07" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationServer07" aria-describedby="validationServer07Feedback" required>
+          <div id="validationServer07Feedback">
+            <p id="validationServer07FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer07FeedbackTextF" class="hidden">Por favor introduce tu ciudad</p>
+          </div>
+        </div>
+        <div id="provincia" class="col-md-3">
+          <label for="validationServer08" class="form-label">Provincia</label>
+          <select class="form-select" id="validationServer08" aria-describedby="validationServer08Feedback" required>
+            <option disabled selected value="0">Selecciona...</option>
+            <option value="1">A Coruña</option>
+            <option value="2">Álava</option>
+            <option value="3">Albacete</option>
+            <option value="4">Alicante</option>
+            <option value="5">Almería</option>
+            <option value="6">Asturias</option>
+            <option value="7">Ávila</option>
+            <option value="8">Badajoz</option>
+            <option value="9">Baleares</option>
+            <option value="10">Barcelona</option>
+            <option value="11">Burgos</option>
+            <option value="12">Cáceres</option>
+            <option value="13">Cádiz</option>
+            <option value="14">Cantabria</option>
+            <option value="15">Castellón</option>
+            <option value="16">Ciudad Real</option>
+            <option value="17">Córdoba</option>
+            <option value="18">Cuenca</option>
+            <option value="19">Girona</option>
+            <option value="20">Granada</option>
+            <option value="21">Guadalajara</option>
+            <option value="22">Gipuzkoa</option>
+            <option value="23">Huelva</option>
+            <option value="24">Huesca</option>
+            <option value="25">Jaén</option>
+            <option value="26">León</option>
+            <option value="27">Lleida</option>
+            <option value="28">La Rioja</option>
+            <option value="29">Lugo</option>
+            <option value="30">Madrid</option>
+            <option value="31">Málaga</option>
+            <option value="32">Murcia</option>
+            <option value="33">Navarra</option>
+            <option value="34">Ourense</option>
+            <option value="35">Palencia</option>
+            <option value="36">Pontevedra</option>
+            <option value="37">Salamanca</option>
+            <option value="38">Segovia</option>
+            <option value="39">Sevilla</option>
+            <option value="40">Soria</option>
+            <option value="41">Tarragona</option>
+            <option value="42">Teruel</option>
+            <option value="43">Toledo</option>
+            <option value="44">Valencia</option>
+            <option value="45">Valladolid</option>
+            <option value="46">Vizcaya</option>
+            <option value="47">Zamora</option>
+            <option value="48">Zaragoza</option>
+          </select>
+          <div id="validationServer08Feedback">
+            <p id="validationServer08FeedbackTextV" class="hidden">Aceptado</p>
+            <p id="validationServer08FeedbackTextF" class="hidden">Por favor selecciona tu provincia</p>
+          </div>
+        </div>
+        <div id="terminos" class="col-12">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="Check3" aria-describedby="Check3Feedback" required>
+            <label class="form-check-label" for="Check3">
+            Acepta los términos y condiciones
+            </label>
+            <div id="Check3Feedback" class="invalid-feedback">
+              <p id="Check3FeedbackTextV" class="hidden">Aceptado</p>
+              <p id="Check3FeedbackTextF">Debes aceptar antes de enviar</p>
             </div>
-            <div class="col-md-4">
-              <label for="validationServerUsername" class="form-label">Nombre de usuario</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                  Elige un nombre de usuario
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationServer02" class="form-label">Edad</label>
-              <input type="number" class="form-control is-valid" id="validationServer02" required>
-              <div class="valid-feedback">
-                Aceptado
-              </div>
-            </div>
-            <div class="col-md-8">
-              <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control is-valid" id="validationServer02" required placeholder="nombre@ejemplo.com">
-            </div>
-              <div class="valid-feedback">
-                Aceptado
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationServer03" class="form-label">Dirección</label>
-              <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-              <div id="validationServer03Feedback" class="invalid-feedback">
-                Por favor introduce tu dirección
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationServer05" class="form-label">Código Postal</label>
-              <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-              <div id="validationServer05Feedback" class="invalid-feedback">
-                Por favor introduce tu código postal
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationServer03" class="form-label">Ciudad</label>
-              <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-              <div id="validationServer03Feedback" class="invalid-feedback">
-                Por favor introduce una ciudad
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationServer04" class="form-label">Provincia</label>
-              <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                <option selected disabled value="">Selecciona...</option>
-                <option>A Coruña</option>
-                <option>Álava</option>
-                <option>Albacete</option>
-                <option>Alicante</option>
-                <option>Almería</option>
-                <option>Asturias</option>
-                <option>Ávila</option>
-                <option>Badajoz</option>
-                <option>Baleares</option>
-                <option>Barcelona</option>
-                <option>Burgos</option>
-                <option>Cáceres</option>
-                <option>Cádiz</option>
-                <option>Cantabria</option>
-                <option>Castellón</option>
-                <option>Ciudad Real</option>
-                <option>Córdoba</option>
-                <option>Cuenca</option>
-                <option>Girona</option>
-                <option>Granada</option>
-                <option>Guadalajara</option>
-                <option>Gipuzkoa</option>
-                <option>Huelva</option>
-                <option>Huesca</option>
-                <option>Jaén</option>
-                <option>León</option>
-                <option>Lleida</option>
-                <option>La Rioja</option>
-                <option>Lugo</option>
-                <option>Madrid</option>
-                <option>Málaga</option>
-                <option>Murcia</option>
-                <option>Navarra</option>
-                <option>Ourense</option>
-                <option>Palencia</option>
-                <option>Pontevedra</option>
-                <option>Salamanca</option>
-                <option>Segovia</option>
-                <option>Sevilla</option>
-                <option>Soria</option>
-                <option>Tarragona</option>
-                <option>Teruel</option>
-                <option>Toledo</option>
-                <option>Valencia</option>
-                <option>Valladolid</option>
-                <option>Vizcaya</option>
-                <option>Zamora</option>
-                <option>Zaragoza</option>
-              </select>
-              <div id="validationServer04Feedback" class="invalid-feedback">
-                Por favor selecciona una provincia
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                <label class="form-check-label" for="invalidCheck3">
-                  Acepta los términos y condiciones
-                </label>
-                <div id="invalidCheck3Feedback" class="invalid-feedback">
-                  Debes aceptar antes de enviar
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary boton" type="submit">Enviar</button>
-            </div>
-        </form>
+          </div>
+        </div>
+        <div id="boton" class="col-12">
+        <button id="botonEnviar" class="btn btn-primary boton" type="submit">Enviar</button>
+        </div>
+      </form>
     </main>
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>

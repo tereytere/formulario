@@ -26,6 +26,24 @@ body, header, main, footer {
   padding: 2% 0%;
 }
 
+.valid-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em !important;
+  color: #198754 !important;
+}
+
+.invalid-feedback {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875em !important;
+  color: #dc3545 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .boton {
   --bs-btn-bg: rgb(65, 7, 82) !important;
   --bs-btn-border-color: rgb(39, 5, 49) !important;
